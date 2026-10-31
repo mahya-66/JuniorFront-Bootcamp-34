@@ -2,6 +2,9 @@
   --dark-gray: #474c59;
   --white: #d9d1c7;
   --dark-blue: #131026;
+  --black: #000000;
+  --black-10: #0000001a;
+  --black-50: #2b2f36e2;
 }
 
 * {
@@ -64,7 +67,8 @@ a {
   align-items: center;
 }
 .border {
-  border: 1px dashed #d9d1c726;
+  flex: 1;
+  border-bottom: 1px dashed #d9d1c726;
 }
 .track-name,
 .time {
@@ -79,24 +83,37 @@ a {
 .albums-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: calc((360px - 12px) / 2);
+  align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 .albums-cover {
+  --bg-color: var(--black-10);
   padding: 16px;
-
-  /* background-color: #000000;
-  opacity: 0.1; */
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 10px 0 #00000080; */
+  background-color: var(--bg-color);
 }
 .albums-cover span {
   display: block;
 }
-.albums-name {
-  overflow: ellipsis;
+.album-name {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+  display: block;
 }
 
 .footer {
+  --bg-color: var(--black-50);
   text-align: center;
-  background-color: #2b2f36e2;
+  background-color: var(--bg-color);
   padding: 12px 0;
+  color: var(--black);
 }
