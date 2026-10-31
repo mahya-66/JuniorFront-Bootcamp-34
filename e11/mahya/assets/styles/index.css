@@ -223,4 +223,17 @@ a {
   /* .spotify-logo {
 
   } */
+
+  .tracks-title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .track-name {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .tracks-item {
+    gap: 24px;
+    line-height: 36px;
+  }
 }
