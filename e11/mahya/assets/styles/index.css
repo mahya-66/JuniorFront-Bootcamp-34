@@ -224,6 +224,9 @@ a {
 
   } */
 
+  .tracks {
+    margin-bottom: 126px;
+  }
   .tracks-title {
     font-weight: 700;
     font-size: 32px;
@@ -235,5 +238,33 @@ a {
   .tracks-item {
     gap: 24px;
     line-height: 36px;
+  }
+
+  .other-albums-title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .album-name {
+    font-size: 16px;
+  }
+  .albums-wrapper {
+    gap: 24px;
+    justify-content: start;
+  }
+  .albums-cover {
+    width: calc(25% - 24px);
+    background-color: transparent;
+  }
+  .albums-cover:hover {
+    --bg-color: var(--black-10);
+    background-color: var(--bg-color);
+    cursor: pointer;
+  }
+  .albums-cover-img {
+    width: 200px;
+    aspect-ratio: 1;
+  }
+  .other-albums {
+    margin-bottom: 120px;
   }
 }
