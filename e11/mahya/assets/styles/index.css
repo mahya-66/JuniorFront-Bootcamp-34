@@ -190,6 +190,9 @@ a {
     background-color: transparent;
     color: var(--color);
     font-weight: 700;
+    /* to be fixed: */
+    width: 191px;
+    height: 48px;
   }
   .btn:hover {
     --color: var(--white);
@@ -204,12 +207,13 @@ a {
   }
   .album-cover-img {
     width: 400px;
-    perspective: 1000px;
+    perspective: 500px;
     transform-origin: left center;
     transition: transform 0.8s ease;
   }
   .album-cover:hover .album-cover-img {
     transform: rotateY(45deg);
+    cursor: pointer;
   }
   .album-cover:hover .disc {
     transform: translateX(100px) rotate(360deg);
@@ -231,8 +235,12 @@ a {
     font-weight: 700;
     font-size: 32px;
   }
-  .tracks-item:hover,
-  .track-name:hover {
+  .tracks-item:hover .track-name {
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .tracks-item:hover .time {
     font-weight: 700;
     font-size: 24px;
     cursor: pointer;
@@ -246,8 +254,9 @@ a {
     font-weight: 700;
     font-size: 32px;
   }
-  .album-name {
+  .albums-cover .album-name {
     font-size: 16px;
+    display: none;
   }
   .albums-wrapper {
     gap: 24px;
@@ -261,6 +270,9 @@ a {
     --bg-color: var(--black-10);
     background-color: var(--bg-color);
     cursor: pointer;
+  }
+  .albums-cover:hover .album-name {
+    display: block;
   }
   .albums-cover-img {
     width: 200px;
