@@ -231,9 +231,11 @@ a {
     font-weight: 700;
     font-size: 32px;
   }
-  .track-name {
+  .tracks-item:hover,
+  .track-name:hover {
     font-weight: 700;
     font-size: 24px;
+    cursor: pointer;
   }
   .tracks-item {
     gap: 24px;
