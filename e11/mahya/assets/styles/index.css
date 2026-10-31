@@ -42,6 +42,19 @@ a {
   opacity: 0.4;
   font-family: "Roboto", sans-serif;
 }
+.album-cover-img {
+  position: relative;
+  z-index: 2;
+  width: 310px;
+  aspect-ratio: 1;
+}
+.disc {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 350px;
+  aspect-ratio: 1;
+}
 
 .btn {
   --bg-color: var(--dark-blue);
